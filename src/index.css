@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+/* VARIABLES */
+:root {
+    --background: #0f0c0a;
+    --primary: #D9A520;
+    --text: #ffffff;
+    --muted: #b6b6b6;
+}
+
+.font {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.font1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-muted-colors {
+    color: #9D968D;
+}
+
+.text-gradient-gold {
+    color: #D9A520;
+}
+
+
+nav a:hover,
+button:hover {
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.btn {
+    padding: 0.75rem 2.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #000;
+    border: none;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Hover glow */
+.btn-primary:hover {
+    background-color: rgba(217, 165, 32, 0.9);
+    box-shadow: 0 0 40px rgba(217, 165, 32, 0.15);
+    color: #000;
+}
+
+.btn-primary:hover .arrow {
+    transform: translateX(5px);
+}
+
+.btn-primary:hover {
+    background-color: rgba(217, 165, 32, 0.9);
+    /* hover:bg-primary/90 */
+    box-shadow: 0 0 40px rgba(217, 165, 32, 0.15);
+    /* hover:shadow-glow */
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #322D2A;
+    color: var(--text);
+}
+
+.btn-outline:hover {
+    border: 1px solid rgba(217, 165, 32, 0.9);
+    color: rgba(217, 165, 32, 0.9);
+
+    transition: all 0.3s ease;
+
+
+}
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+
+/* ANIMATIONS */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, -10px);
+    }
+}
