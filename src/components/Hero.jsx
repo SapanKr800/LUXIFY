@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 
 const Hero = () => {
@@ -30,24 +31,24 @@ fade-up [animation-delay:0.5s]">
                     </p>
 
                     <div className="flex flex-wrap gap-4 justify-center fade-up [animation-delay:s]">
-                     
 
-                         <button
-                                type="submit"
-                                className="px-8 py-4 sm:w-auto w-full bg-[#D9A520] text-[#000000] font-body text-sm tracking-wider hover:text-[#000000!important] transition-colors rounded-none flex items-center justify-center gap-2 group"
-                            >
-                                 Explore Collection
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                            </button>
 
-                              <button
-                                type="submit"
-                                className="px-8 py-4 btn-outline sm:w-auto w-full"
-                            >
-                                   View Lookbook
-                            </button>
+                        <NavLink to="/collections"
+                            type="submit"
+                            className="px-8 py-4 sm:w-auto w-full bg-[#D9A520] text-[#000000] font-body text-sm tracking-wider hover:text-[#000000!important] transition-colors rounded-none flex items-center justify-center gap-2 group"
+                        >
+                            Explore Collection
+                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </NavLink>
 
-                     
+                        <NavLink
+                            type="submit"
+                            className="px-8 py-4 btn-outline sm:w-auto w-full"
+                        >
+                            View Lookbook
+                        </NavLink>
+
+
                     </div>
                 </div>
             </div>

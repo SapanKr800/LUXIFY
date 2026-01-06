@@ -3,13 +3,7 @@ import { useState } from 'react';
 
 const Newsletter = () => {
 
-    const [email, setEmail] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        setEmail("");
-    };
     return (
         <>
 
@@ -37,13 +31,12 @@ fade-up [animation-delay:0.5s]">
                             Subscribe to receive exclusive offers, early access to new collections, and curated style inspiration.
                         </p>
 
-                       
 
-                        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+
+                        <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                             <input
                                 type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+
                                 placeholder="Enter your email"
                                 className="flex-1 px-6 py-4 bg-[#272321] border border-[#272321] rounded-none text-sm text-[#9D968D] placeholder:text-[#9D968D] focus:outline-none focus:border-[#D9A520] transition-colors"
                                 required
