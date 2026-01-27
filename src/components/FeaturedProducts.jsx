@@ -33,7 +33,7 @@ export const Product = ({ limit }) => {
 
             {(limit ? products.slice(0, limit) : products).map((item, i) => {
                 return (
-                    <ProductCard key={i} {...item} />
+                    <ProductCard key={i} product={item} />
                 )
             })}
 
