@@ -101,9 +101,13 @@ const Cart = () => {
               <span>${(subtotal + 5).toFixed(2)}</span>
             </div>
 
-            <button className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
-              Proceed to Checkout
-            </button>
+          
+
+             <button className="w-full py-3 bg-[#ffffff] text-[#000000] text-sm tracking-wider hover:bg-[#D9A520] hover:text-[#000000!important]
+                             transition-colors rounded-sm flex items-center justify-center gap-2"
+                        >
+                        Proceed to Checkout
+                        </button>
           </div>
         </div>
       </div>
